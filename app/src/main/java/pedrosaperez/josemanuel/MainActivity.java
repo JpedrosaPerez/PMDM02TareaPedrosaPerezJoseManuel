@@ -15,20 +15,36 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.NavDestination;
 import androidx.navigation.Navigation;
-import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.google.android.material.snackbar.Snackbar;
 
 import pedrosaperez.josemanuel.databinding.ActivityMainBinding;
 
-
+/**
+ * Actividad principal del videojuego que gestiona la navegación y la interacción del usuario con el menú lateral (Drawer).
+ * Incluye integración con NavController, manejo de un NavigationView y muestra detalles sobre los personajes del juego.
+ *
+ * @author [Jose Manuel Pedrosa Perez]
+ * @version 1.0
+ */
 public class MainActivity extends AppCompatActivity {
+
+    /** Controlador del menú lateral (Drawer). */
     private ActionBarDrawerToggle toggle;
+
+    /** Controlador de navegación que gestiona los fragmentos. */
     private NavController navController;
-    private ActivityMainBinding binding; // Declaramos binding como variable de instancia
 
+    /** Objeto para manejar el enlace con las vistas definidas en el layout. */
+    private ActivityMainBinding binding;
 
+    /**
+     * Método que se ejecuta al crear la actividad. Configura la navegación y el menú lateral.
+     *
+     * @param savedInstanceState Estado guardado previamente de la actividad, si existe.
+     */
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
@@ -66,20 +82,27 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    /**
+     * Cambia la configuración del indicador del menú lateral según el destino de navegación actual.
+     *
+     * @param navController El controlador de navegación.
+     * @param navDestination El destino de navegación actual.
+     * @param bundle Datos adicionales que pueden pasarse entre destinos, si aplica.
+     */
+    private void onChangeImageView(NavController navController, NavDestination navDestination, Bundle bundle) {
+        if (toggle == null) return;
 
-    private void onChangeImageView(NavController navController, NavDestination navDestination, Bundle bundle){
-        if(toggle == null) return;
-
-        if(navDestination.getId()==R.id.person_Recyclerview){
+        if (navDestination.getId() == R.id.person_Recyclerview) {
             toggle.setDrawerIndicatorEnabled(true);
-        }else{
+        } else {
             toggle.setDrawerIndicatorEnabled(false);
         }
-
-
     }
+
+    /**
+     * Configura el menú lateral (Drawer) y su interacción con el ActionBar.
+     */
     private void configureToggleMenu() {
-        // Configurar el ActionBarDrawerToggle
         toggle = new ActionBarDrawerToggle(
                 this,
                 binding.drawerLayout,
@@ -90,38 +113,57 @@ public class MainActivity extends AppCompatActivity {
         toggle.syncState();
     }
 
-
-    // Método para manejar el clic en un juego
+    /**
+     * Maneja el clic en un personaje del juego y navega al detalle del mismo.
+     *
+     * @param person El personaje seleccionado.
+     * @param view La vista desde la que se seleccionó el personaje.
+     */
     public void gameClicked(DataPerson person, View view) {
-        // Crear un Bundle para pasar los datos al GameDetailFragment
         Bundle bundle = new Bundle();
-        bundle.putString("name", person.getName()); // Pasa el nombre del juego
-        bundle.putInt("image", person.getImage()); // Pasa la imagen del juego
+        bundle.putString("name", person.getName());
+        bundle.putInt("image", person.getImage());
         bundle.putString("description", person.getDescription());
-        bundle.putString("skills",person.getSkills());// Pasa la descripción o más datos que necesites
+        bundle.putString("skills", person.getSkills());
 
-        // Navegar al GameDetailFragment con el Bundle
         Navigation.findNavController(view).navigate(R.id.personDetailFragment, bundle);
     }
+
+    /**
+     * Permite manejar el botón de navegación hacia arriba en el ActionBar.
+     *
+     * @return {@code true} si la navegación hacia arriba es manejada correctamente; de lo contrario, delega al padre.
+     */
     @Override
     public boolean onSupportNavigateUp() {
-        // Utiliza el método navigateUp del NavController
         return navController.navigateUp() || super.onSupportNavigateUp();
     }
+
+    /**
+     * Infla el menú en el ActionBar.
+     *
+     * @param menu El menú a inflar.
+     * @return {@code true} si el menú fue inflado correctamente.
+     */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Infla el menú; agrega elementos al ActionBar si está presente
         getMenuInflater().inflate(R.menu.menu, menu);
-
         return true;
     }
+
+    /**
+     * Maneja las acciones seleccionadas en el menú.
+     *
+     * @param item El elemento del menú seleccionado.
+     * @return {@code true} si la acción fue manejada; de lo contrario, delega al padre.
+     */
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (toggle.onOptionsItemSelected(item)) {
             return true;
         }
         if (item.getItemId() == R.id.about) {
-            new AlertDialog.Builder(this) // 'this' se refiere al contexto de la Activity
+            new AlertDialog.Builder(this)
                     .setTitle(getString(R.string.about))
                     .setIcon(R.drawable.mario)
                     .setMessage(getString(R.string.about_text))
@@ -131,12 +173,13 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+    /**
+     * Muestra un mensaje al usuario cuando la actividad se inicia.
+     */
     @Override
-public void onStart(){
+    public void onStart() {
         super.onStart();
-    Snackbar.make(binding.getRoot(),getString(R.string.snack_text),Snackbar.LENGTH_SHORT).show();
-
-}
-
-
+        Snackbar.make(binding.getRoot(), getString(R.string.snack_text), Snackbar.LENGTH_SHORT).show();
+    }
 }
