@@ -1,0 +1,27 @@
+<!-- res/values-en/strings.xml -->
+<resources>
+    <string name="app_name">PMDMTarea02Final</string>
+    <string name="mario_name">Mario Bross</string>
+    <string name="mario_description">Description: Mario is an Italian plumber and the main hero of the Mushroom Kingdom. With his red cap and distinctive mustache, he is always ready to save Princess Peach from Bowser\'s clutches.</string>
+    <string name="mario_skills">Skills: Mario excels in versatility. He can perform acrobatic jumps, use power-ups like the Fire Flower or Super Star, and adapt to any challenge thanks to his courage and determination.</string>
+    <string name="luigi_name">Luigi</string>
+    <string name="luigi_description">Description: Luigi is Mario\'s younger brother, known for his green outfit and slightly more cautious attitude. Although he often lives in his brother\'s shadow, he is a hero in his own right.</string>
+    <string name="luigi_skills">Skills: Luigi stands out for his ability to jump higher than Mario and his agility in tricky situations. He faces ghosts with his trusty vacuum in Luigi’s Mansion and proves that bravery comes in many forms.</string>
+    <string name="peach_name">Peach</string>
+    <string name="peach_description">Description: Peach is the princess of the Mushroom Kingdom, known for her kindness and ability to lead with wisdom. Although she is often captured by Bowser, she is no helpless princess.</string>
+    <string name="peach_skills">Skills: Peach uses her umbrella to glide long distances and can unleash magical powers to protect her kingdom. Her calmness under pressure is her greatest strength.</string>
+    <string name="toad_name">Toad</string>
+    <string name="toad_description">Description: Toad is one of the loyal inhabitants of the Mushroom Kingdom and a close friend of Mario and Peach. Although small in size, he has a big heart.</string>
+    <string name="toad_skills">Skills: Toad is extremely fast and agile, making him an excellent collector of coins and items. His determination makes him brave even in the most dangerous moments.</string>
+    <string name="toadette_name">Toadette</string>
+    <string name="toadette_description">Description: Toadette is a brave and cheerful inhabitant of the Mushroom Kingdom. With her pink cap and positive attitude, she is always ready to join Mario and his friends on their adventures.</string>
+    <string name="toadette_skills">Skills: Toadette is agile and versatile, with the ability to transform into Superstar Toadette thanks to certain power-ups. Her skill in interacting with objects and solving puzzles makes her indispensable in most missions. Additionally, her strong determination and energy are contagious to everyone around her.</string>
+    <string name="bowser_name">Bowser</string>
+    <string name="bowser_description">Description: Bowser, the King of the Koopas, is the main villain of the saga. With his intimidating appearance and drive to conquer the Mushroom Kingdom, he is Mario\'s eternal rival.</string>
+    <string name="bowser_skills">Skills: Bowser possesses immense strength, the ability to throw fireballs, and create impossible obstacles. His persistence makes him a formidable enemy.</string>
+    <string name="about">About…</string>
+    <string name="about_text">Application developed by Jose Manuel Pedrosa Perez. v.1.0</string>
+    <string name="snack_text">You are in the Characters list</string>
+    <string name="toast_text">The character has been selected</string>
+    <string name="cambio_lenguaje">Change languaje</string>
+</resources>

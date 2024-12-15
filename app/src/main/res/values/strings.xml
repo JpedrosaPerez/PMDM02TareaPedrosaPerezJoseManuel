@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">PMDMTarea02Final</string>
+    <string name="mario_name">Mario Bross</string>
+    <string name="mario_description"> Descripción: Mario es un fontanero italiano y el héroe principal del Reino Champiñón. Con su gorra roja y su distintivo bigote, siempre está listo para salvar a la Princesa Peach de las garras de Bowser.</string>
+    <string name="mario_skills">Habilidades: Mario destaca por su versatilidad. Puede realizar saltos acrobáticos, usar power-ups como la Flor de Fuego o la Superestrella, y adaptarse a cualquier desafío gracias a su valor y determinación.</string>
+    <string name="luigi_name">Luigi</string>
+    <string name="luigi_description">Descripción: Luigi es el hermano menor de Mario, conocido por su traje verde y su actitud un poco más cautelosa. Aunque suele vivir a la sombra de su hermano, es un héroe por derecho propio.</string>
+    <string name="luigi_skills">Habilidades: Luigi sobresale en su capacidad de saltar más alto que Mario y su agilidad en situaciones complicadas. Enfrenta fantasmas con su confiable aspiradora en Luigi’s Mansion y demuestra que el coraje viene en muchas formas.</string>
+    <string name="peach_name">Peach</string>
+    <string name="peach_description">Descripción: Peach es la princesa del Reino Champiñón, conocida por su bondad y su habilidad para liderar con sabiduría. Aunque suele ser capturada por Bowser, no es una princesa indefensa.</string>
+    <string name="peach_skills">Habilidades: Peach utiliza su paraguas para planear sobre largas distancias y puede liberar poderes mágicos para proteger a su reino. Su calma bajo presión es su mayor fortaleza.</string>
+    <string name="toad_name">Toad</string>
+    <string name="toad_description">Descripción: Toad es uno de los leales habitantes del Reino Champiñón y un amigo cercano de Mario y Peach. Aunque pequeño en tamaño, tiene un gran corazón.</string>
+    <string name="toad_skills">Habilidades: Toad es extremadamente rápido y ágil, lo que lo convierte en un excelente recolector de monedas y objetos. Su determinación lo hace valiente incluso en los momentos más peligrosos.</string>
+    <string name="toadette_name">Toadette</string>
+    <string name="toadette_description">Descripcion: Toadette es una valiente y alegre habitante del Reino Champiñón. Con su gorra rosa y su actitud positiva, siempre está dispuesta a unirse a Mario y sus amigos en sus aventuras.</string>
+    <string name="toadette_skills">Habilidades: Toadette es ágil y versátil, con la capacidad de transformarse en Toadette Superestrella gracias a ciertos power-ups. Su habilidad para interactuar con objetos y resolver puzzles la hace indispensable en la mayoría de las misiones. Además, su fuerte determinación y energía contagian a todos a su alrededor.</string>
+    <string name="bowser_name">Bowser</string>
+    <string name="bowser_description">Descripción: Bowser, el Rey de los Koopas, es el villano principal de la saga. Con su apariencia intimidante y su afán de conquistar el Reino Champiñón, es el rival eterno de Mario.</string>
+    <string name="bowser_skills">Habilidades: Bowser cuenta con una fuerza descomunal, la capacidad de lanzar bolas de fuego y crear obstáculos imposibles. Su persistencia lo convierte en un enemigo formidable.</string>
+    <string name="about">Acerda de…</string>
+    <string name="about_text"> Aplicación desarrollada por Jose Manuel Pedrosa Perez.v.1.0</string>
+    <string name="snack_text">Esta usted en la lista de Personajes</string>
+    <string name="toast_text">Se ha seleccionado el personaje </string>
+    <string name="open_drawer" translatable="false">Abrir</string>
+    <string name="close_drawer" translatable="false">Cerrar</string>
+    <string name="cambio_lenguaje" translatable="false">Change languaje</string>
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <color name="colorPrimary">#03A9F4</color> <!-- Rojo para la Toolbar -->
+    <color name="colorPrimaryDark">#03A9F4</color> <!-- Rojo más oscuro -->
+    <color name="colorAccent">#007FFF</color> <!-- Azul para los acentos -->
+    <color name="toolbarTextColor">#FFFFFF</color> <!-- Blanco para el texto de la Toolbar -->
+    <color name="backgroundColor">#FFFFFF</color> <!-- Blanco para el fondo general -->
+</resources>

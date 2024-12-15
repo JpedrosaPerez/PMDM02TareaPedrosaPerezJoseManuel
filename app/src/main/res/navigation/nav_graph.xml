@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/person_Recyclerview"> <!-- Cambia esto al fragmento inicial de tu app -->
+
+    <!-- Definición del MainFragment -->
+    <fragment
+        android:id="@+id/person_Recyclerview"
+        android:name="pedrosaperez.josemanuel.PersonListFragment"
+        android:label=" Fragment" >
+
+
+    </fragment>
+
+    <!-- Definición del GameDetailFragment -->
+    <fragment
+        android:id="@+id/personDetailFragment"
+        android:name="pedrosaperez.josemanuel.PersonDetailFragment"
+        android:label="Person Detail Fragment" />
+</navigation>

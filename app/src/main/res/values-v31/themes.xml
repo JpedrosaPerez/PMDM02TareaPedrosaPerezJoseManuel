@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Base.Theme.PMDMTarea02Final" parent="Theme.Material3.DayNight">
+        <!-- Customize your dark theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+
+
+        <!--SplashScreen -->
+
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/mario</item>
+        <item name="android:windowSplashScreenAnimationDuration">3000</item>
+        <item name="android:windowSplashScreenBackground">@color/colorPrimary</item>
+    </style>
+</resources>
