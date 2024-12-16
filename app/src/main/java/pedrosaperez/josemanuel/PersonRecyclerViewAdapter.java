@@ -83,11 +83,11 @@ public class PersonRecyclerViewAdapter extends RecyclerView.Adapter<PersonViewHo
      * Maneja el evento de clic en un elemento de la lista.
      * Navega al detalle del personaje utilizando un método de la actividad principal.
      *
-     * @param currentGame El personaje que se ha seleccionado.
+     * @param currentPerson El personaje que se ha seleccionado.
      * @param view La vista en la que se hizo clic.
      */
-    private void itemClicked(DataPerson currentGame, View view) {
+    private void itemClicked(DataPerson currentPerson, View view) {
         // Llama a la función gameClicked de MainActivity, pasando la vista
-        ((MainActivity) context).gameClicked(currentGame, view);
+        ((MainActivity) context).gameClicked(currentPerson, view);
     }
 }
